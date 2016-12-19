@@ -51,7 +51,7 @@ interface BufferedReaderCallBack {
 	Integer doSomethingWithReader(BufferedReader br) throws IOException;
 }
 
-class Calculator {
+final class Calculator {
 	public Integer calcSum(String filePath) throws IOException {
 		LineCallback<Integer> sumCallback = 
 				new LineCallback<Integer>() {
