@@ -17,8 +17,31 @@
     	<artifactId>jackson-mapper-asl</artifactId>
     	<version>1.8.5</version>
 	</dependency>
+	
+	<!-- http client -->
+	<dependency>
+    	<groupId>org.apache.httpcomponents</groupId>
+    	<artifactId>httpclient</artifactId>
+    	<version>4.5.2</version>
+	</dependency>
 
-  </dependencies>
+	<!-- Google url short-->
+    <dependency>
+		<groupId>com.google.apis</groupId>
+    	<artifactId>google-api-services-urlshortener</artifactId>
+    	<version>v1-rev47-1.22.0</version>
+    </dependency>
+    
+    <!-- wiremock -->
+	<dependency>
+    <groupId>com.github.tomakehurst</groupId>
+    <artifactId>wiremock</artifactId>
+    <version>2.5.0</version>
+</dependency>
+    
+
+</dependencies>
+
   
 		
   <build>
