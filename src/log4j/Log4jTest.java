@@ -40,5 +40,10 @@ public class Log4jTest {
 		logger.debug("value: {{}123}, {}", "hi", 567);// value: {hi123}, 567 
 
 		logger.debug("value: {{123}}, {}", "hi", 567);// {{123}}, hi 
+		
+		// 세 개 이상의 파라미터를 전달하는 경우는 Object 배열을 활용해야 한다
+		Object[] params =  new Object[]{"1", 2, 3, 4, 5, 6};
+	    logger.info("{} {} {} {} {} {}", params);
 	}
+
 }
