@@ -1,5 +1,7 @@
 package hibernate;
 
+import static javax.persistence.GenerationType.IDENTITY;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,7 +10,7 @@ import javax.persistence.Id;
 @Entity
 public class Member {
 	
-	@Id @GeneratedValue
+	@Id @GeneratedValue(strategy=IDENTITY)
 	private long id;
 
 	@Column
